@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>turn-screen</title>
+    <meta name="description" content="turn-screen description">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <style>
+	html,body{
+		height:100%;
+		padding:0;
+		margin:0;
+		overflow:hidden;
+		background:#000;
+		text-align:center;
+	}
+	.mainScreen{
+		position:relative;
+		bottom:-50%;
+	}
+	.mainNav{
+		position:relative;
+	}
+	.mainNav ul, .mainNav li{
+		display:block;
+		list-style:none;
+		padding:0;
+		margin:0;
+		margin:auto;
+	}
+	.mainNav li{
+		position:absolute;
+		width:150px;
+		height:150px;
+		line-height:150px;
+		text-align:center;
+		border-radius:50%;
+	}
+	.mainNav a{
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:700;
+		font-size:30px;
+		color:#555;
+		text-decoration:none;
+		display:block;
+		width:100%;
+		height:100%;
+		border-radius:50%;
+	}
+	.mainNav a:hover{
+		color:#FFF;
+	}
+	.mercury{
+		top:-30px;
+		left:20px;
+		transform:rotate(-35deg);
+		background-color:#FC0;
+	}
+	.venus{
+		top:-170px;
+		left:calc(50% - 75px);
+		background-color:#90F;
+	}
+	.mars{
+		top:-30px;
+		right:20px;
+		transform:rotate(35deg);
+		background-color:#F00;
+	}
+	
+	.mercuryScreen{
+		width:150px;
+		height:150px;
+		position:fixed;
+		top:20px;
+		left:75px;
+	}
+	.venusScreen{
+		width:150px;
+		height:150px;
+		position:fixed;
+		top:20px;
+		left:calc(50% - 75px);
+	}
+	.marsScreen{
+		width:150px;
+		height:150px;
+		position:fixed;
+		top:20px;
+		right:75px;
+	}
+	
+	</style>
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="/src/turn-screen-app/turn-screen-app.html">
+  </head>
+  <body>
+  
+    <turn-screen-app class="mercuryScreen" rotation-value="300" inst="mercury">
+       <img src="mercury.jpg" width="150" height="150">
+    </turn-screen-app>
+    
+    <turn-screen-app class="venusScreen" rotation-value="100" inst="venus">
+       <img src="venus.jpg" width="150" height="150">
+    </turn-screen-app>
+    
+    <turn-screen-app class="marsScreen" rotation-value="-300" inst="mars">
+       <img src="mars.jpg" width="150" height="150">
+    </turn-screen-app>
+    
+    <turn-screen-app class="mainScreen" rotation-value="-8" inst="main">
+       <div class="mainNav">
+          <ul>
+             <li class="mercury"><a href="#">Mercury</a></li>
+             <li class="venus"><a href="#">Venus</a></li>
+             <li class="mars"><a href="#">Mars</a></li>
+          </ul>
+          <img src="eath.jpg" width="971" height="971">
+       </div>
+    </turn-screen-app>
+    
+  </body>
+</html>
