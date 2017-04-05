@@ -1,6 +1,6 @@
 # \<turn-screen\>
 ## Reusable Polymer 2 component.
-Built in scope of MDLive's "one work hour per day" program.
+Built in scope of MDLive's "one hour per work day" program.
 Current project is an example of Reusable Component and Functional Programming.
 
 The function of the component is to tilt the content depending on the position of the cursor 
