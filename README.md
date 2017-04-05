@@ -9,11 +9,13 @@ The function of the component is to tilt the content depending on the position o
 [Working example here](http://webgoodmood.com/component/turn-screen/turn-screen/build/default/)
 
 ## Source codes
-Component: src/turn-screen-app
-Function _myMouseListener built as an example of Functional Programming.
+Component: `src/turn-screen-app`
 
-Start point: index.html
-Component turn-screen used here four times - once for each planet.
+Function `_myMouseListener` built as an example of Functional Programming.
+
+Start point: `index.html`
+
+Component `<turn-screen>` used here four times - once for each planet.
 
 ## Based on Polymer-CLI
 
