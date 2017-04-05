@@ -54,13 +54,30 @@
       }
 	  
 	  _myMouseListener(e) {
+		  //conctructed with pure functions - example of FP
+		  
 		  var box = this.firstElementChild;
-		  var w = window.innerWidth
+		  var rotation = this.rotationValue;
+		  var documentW = documentWidth();
+		  var mouseX = e.clientX;
+		  
+		  var deg = calculateDeg(mouseX, documentW, rotation);
+		  
+		  rotateBox(deg); 
+		  
+		  function rotateBox(deg){
+			  box.style.transform = 'rotate('+deg+'deg)';
+		  }
+		  
+		  function calculateDeg(x, w, r){
+			  return ( 2 * x / w - 1 ) * parseInt(r);
+		  }
+		  
+		  function documentWidth(){
+			  return window.innerWidth
 			  || document.documentElement.clientWidth
 			  || document.body.clientWidth;
-		  
-		  var deg = ( 2 * e.clientX / w - 1 ) * parseInt(this.rotationValue);
-		  box.style.transform = 'rotate('+deg+'deg)'; 
+		  }
 	  }
 	  
     }

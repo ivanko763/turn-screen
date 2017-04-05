@@ -1,10 +1,23 @@
 # \<turn-screen\>
+## Reusable Polymer 2 component.
+Built in scope of MDLive's "one work hour per day" program.
+Current project is an example of Reusable Component and Functional Programming.
 
+The function of the component is to tilt the content depending on the position of the cursor 
 
+## Demo
+[Working example here](http://webgoodmood.com/component/turn-screen/turn-screen/build/default/)
 
-## Install the Polymer-CLI
+## Source codes
+Component: src/turn-screen-app
+Function _myMouseListener built as an example of Functional Programming.
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
+Start point: index.html
+Component turn-screen used here four times - once for each planet.
+
+## Based on Polymer-CLI
+
+Install [Polymer CLI](https://www.npmjs.com/package/polymer-cli). Then run `polymer serve` to serve your application locally.
 
 ## Viewing Your Application
 
@@ -17,23 +30,3 @@ $ polymer serve
 ```
 $ polymer build
 ```
-
-This will create a `build/` folder with `bundled/` and `unbundled/` sub-folders
-containing a bundled (Vulcanized) and unbundled builds, both run through HTML,
-CSS, and JS optimizers.
-
-You can serve the built versions by giving `polymer serve` a folder to serve
-from:
-
-```
-$ polymer serve build/bundled
-```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
-# turn-screen
