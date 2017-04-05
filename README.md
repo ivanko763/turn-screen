@@ -3,7 +3,7 @@
 Built in scope of MDLive's "one hour per work day" program.
 Current project is an example of Reusable Component and Functional Programming.
 
-The function of the component is to tilt the content depending on the position of the cursor 
+The function of the component is to tilt the content depending on the cursor x-position  
 
 ## Demo
 [Working example here](http://webgoodmood.com/component/turn-screen/turn-screen/build/default/)
