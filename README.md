@@ -21,14 +21,17 @@ Component `<turn-screen>` used here four times - once for each planet.
 
 Install [Polymer CLI](https://www.npmjs.com/package/polymer-cli). Then run `polymer serve` to serve your application locally.
 
-## Viewing Your Application
+## Viewing Application
 
 ```
 $ polymer serve
 ```
 
-## Building Your Application
+## Building Application
 
 ```
 $ polymer build
 ```
+
+## How to start a blank application with polymer init
+[example here](https://www.polymer-project.org/2.0/start/install-2-0)
